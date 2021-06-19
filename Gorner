@@ -1,0 +1,31 @@
+import random
+def res(a, b, c, d, e, f):
+    while not False:
+        k = int(b)
+        m = int(k * a + c)
+        n = int(m * a + d)
+        s = int(n * a + e)
+        r = int(s * a + f)
+        print("Предпологаемый корень: " + str(a))
+        print(k)
+        print(m)
+        print(n)
+        print(s)
+        print("----------------------------------------------")
+        if r == 0:
+            print("Корень: " + str(a))
+            break
+        if a == 1000:
+            break
+        if a == -1:
+            a+=2
+        else:
+            a+=1
+b=int(input("a="))
+c=int(input("b="))
+d=int(input("c="))
+e=int(input("d="))
+f=int(input("e="))
+a=-1000
+ass=res(a, b, c, d, e, f)
+print(ass)
